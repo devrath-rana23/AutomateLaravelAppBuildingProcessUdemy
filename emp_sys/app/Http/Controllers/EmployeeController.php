@@ -15,6 +15,6 @@ class EmployeeController extends Controller
     {
         $employee = Employee::find($id);
 
-        $request->session()->store('employee.name', $employee->name);
+        $employee->update([]);
     }
 }
