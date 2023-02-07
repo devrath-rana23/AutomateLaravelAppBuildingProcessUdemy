@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Jobs\ComputeSalary;
+use App\Events\FancyEvent;
 use App\Models\Employee;
 use Illuminate\Http\Request;
 
@@ -16,6 +16,6 @@ class EmployeeController extends Controller
     {
         $employee = Employee::find($id);
 
-        ComputeSalary::dispatch($employee);
+        event(new FancyEvent($employee));
     }
 }

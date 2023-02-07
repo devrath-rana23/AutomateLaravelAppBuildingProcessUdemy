@@ -161,3 +161,7 @@ And here are all of the employees that resides inside our database.
 # Make a job ComputeSalary -> php artisan make:job ComputeSalary
 
 # Write a statement to dispatch this job
+
+# fire event script in yaml and run shell
+
+# php artisan make:listener to generate listeners and code further
