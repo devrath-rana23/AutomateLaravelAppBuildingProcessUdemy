@@ -85,3 +85,11 @@ Gives error
 # Make shell(blueprint.sh) file
 sudo chmod +x blueprint.sh -> giving execute permission to shell file
 ./blueprint.sh -> run this command
+
+# The file (.blueprint) contains the last built details, the files that are created and details about the models and it's a yml file as well.That how the erase command know what to delete.
+
+# Name change existing draft file to draft2.yaml
+
+# now create new draft file using blueprint:new
+
+# Now writing in draft file table details in a single line in object form syntax
