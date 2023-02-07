@@ -93,3 +93,9 @@ sudo chmod +x blueprint.sh -> giving execute permission to shell file
 # now create new draft file using blueprint:new
 
 # Now writing in draft file table details in a single line in object form syntax
+
+# Rename draft file again and make new draft file
+
+# Blueprint allows us to make different modifiers like enum and run blueprint:build command
+
+# 

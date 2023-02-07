@@ -19,6 +19,8 @@ class Employee extends Model
         'identification',
         'birth',
         'salary',
+        'martial_status',
+        'bonus',
     ];
 
     /**
@@ -29,5 +31,7 @@ class Employee extends Model
     protected $casts = [
         'id' => 'integer',
         'birth' => 'datetime',
+        'salary' => 'integer',
+        'bonus' => 'decimal:2',
     ];
 }
