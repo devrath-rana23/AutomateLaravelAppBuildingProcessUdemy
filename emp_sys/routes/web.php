@@ -19,6 +19,3 @@ Route::get('/', function () {
 
 
 Route::get('employee/test', [App\Http\Controllers\employeeController::class, 'test']);
-
-
-Route::get('employee/test', [App\Http\Controllers\EmployeeController::class, 'test']);
