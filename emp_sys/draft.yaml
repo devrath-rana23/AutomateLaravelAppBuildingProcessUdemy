@@ -18,6 +18,7 @@ models:
       belongsTo: Employee
   Department:
     name: string:100
+    timestampsTz
     relationships:
       hasMany: Employee
   Project:
