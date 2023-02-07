@@ -26,6 +26,8 @@ class EmployeeControllerTest extends TestCase
 
         $response = $this->get(route('employee.test'));
 
+        $response->assertSessionHas('employee.name', $employee->name);
+
         Event::assertDispatched(FancyEvent::class, function ($event) use ($employee) {
             return $event->employee->is($employee);
         });

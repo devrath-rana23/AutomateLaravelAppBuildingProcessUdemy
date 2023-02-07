@@ -16,6 +16,8 @@ class EmployeeController extends Controller
     {
         $employee = Employee::find($id);
 
+        $request->session()->flash('employee.name', $employee->name);
+
         event(new FancyEvent($employee));
     }
 }

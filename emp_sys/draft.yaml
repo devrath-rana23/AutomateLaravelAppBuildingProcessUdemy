@@ -33,6 +33,7 @@ controllers:
   Employee:
     test:
       find: id
+      flash: employee.name # for session flash data
       fire: FancyEvent with:employee # won't create any event listener or wont register in event service provider
       # dispatch: ComputeSalary with:employee #ComputeSalary-> jobname; employee-> parameter name
       # delete: Employee
