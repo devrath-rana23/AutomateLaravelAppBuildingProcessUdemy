@@ -79,3 +79,5 @@ Gives error
 # remove already created blueprints using blueprint:erase
 
 # create new blueprint and migrate fresh
+
+# php artisan db:seed
