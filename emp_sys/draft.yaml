@@ -5,5 +5,5 @@ models:
     birth: datetime
     salary: unsignedinteger
     martial_status: enum:single,married,divorced
-    bonus: decimal:8,2
-    order: unsignedinteger default:1
+    bonus: decimal:8,2 nullable
+    order: unsignedinteger default:1 index

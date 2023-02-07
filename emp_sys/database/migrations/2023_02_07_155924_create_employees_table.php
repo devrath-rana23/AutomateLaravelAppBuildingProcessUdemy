@@ -20,8 +20,8 @@ class CreateEmployeesTable extends Migration
             $table->dateTime('birth');
             $table->unsignedInteger('salary');
             $table->enum('martial_status', ["single","married","divorced"]);
-            $table->decimal('bonus', 8, 2);
-            $table->unsignedInteger('order')->default(1);
+            $table->decimal('bonus', 8, 2)->nullable();
+            $table->unsignedInteger('order')->default(1)->index();
             $table->timestamps();
         });
     }
