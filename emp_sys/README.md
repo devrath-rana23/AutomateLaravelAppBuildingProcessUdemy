@@ -68,3 +68,6 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 # Blueprint is an artisan command with four commands
 
 We will create first yml file using php artisan blueprint:new
+
+# Make yaml 
+draft and then run blueprint:build artisan command
