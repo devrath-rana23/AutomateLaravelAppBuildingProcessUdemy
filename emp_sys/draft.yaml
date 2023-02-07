@@ -33,7 +33,8 @@ controllers:
   Employee:
     test:
       find: employee.id
-      save: employee
+      send: ThanksMail to:employee.contactInfo.email
+      # save: employee
       # validate: employee
       # render: employee.show with employee #makes view
 
