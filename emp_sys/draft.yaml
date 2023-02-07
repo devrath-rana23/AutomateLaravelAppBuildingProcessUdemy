@@ -1,8 +1,6 @@
----
 models:
   Employee:
     name: string:100
     identification: string:100
     birth: datetime:100
     salary: integer
-...
