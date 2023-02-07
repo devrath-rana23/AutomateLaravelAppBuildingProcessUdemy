@@ -16,13 +16,14 @@ class EmployeeControllerTest extends TestCase
     /**
      * @test
      */
-    public function test_responds_with()
+    public function test_displays_view()
     {
         $employee = Employee::factory()->create();
 
         $response = $this->get(route('employee.test'));
 
         $response->assertOk();
-        $response->assertJson($employee);
+        $response->assertViewIs('employee.show');
+        $response->assertViewHas('employee');
     }
 }

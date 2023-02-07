@@ -33,6 +33,6 @@ controllers:
   Employee:
     test:
       find: employee.id
-      respond: employee #makes test
+      render: employee.show with employee #makes view
 
 
