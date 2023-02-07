@@ -97,6 +97,6 @@ OR PUTTING THEM IN CURLY BRACES IN SINGLE LINE
 
 Car: {Manufacturer: "TXS",Year: "2018",Capacity: "2000 CC"}
 
-
+# USE dbdiagram.io to make basic yml -> https://dbdiagram.io/d
 
 
