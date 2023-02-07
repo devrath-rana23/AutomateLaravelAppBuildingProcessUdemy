@@ -96,6 +96,7 @@ sudo chmod +x blueprint.sh -> giving execute permission to shell file
 
 # Rename draft file again and make new draft file
 
-# Blueprint allows us to make different modifiers like enum and run blueprint:build command
+# Blueprint allows us to make different modifiers like enum and run ./blueprint.sh command
 
-# 
+# Defining auto increment type gives error SQLSTATE[42000]: Syntax error or access violation: 1075 Incorrect table definition; there can be only one auto column and it must be defined as a key
+

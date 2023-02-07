@@ -18,7 +18,10 @@ class CreateEmployeesTable extends Migration
             $table->string('name', 100);
             $table->string('identification', 100);
             $table->dateTime('birth');
-            $table->integer('salary');
+            $table->unsignedInteger('salary');
+            $table->enum('martial_status', ["single","married","divorced"]);
+            $table->decimal('bonus', 8, 2);
+            $table->unsignedInteger('order')->autoIncrement();
             $table->timestamps();
         });
     }

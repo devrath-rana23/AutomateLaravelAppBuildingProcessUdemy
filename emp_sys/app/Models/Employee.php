@@ -21,6 +21,7 @@ class Employee extends Model
         'salary',
         'martial_status',
         'bonus',
+        'order',
     ];
 
     /**
@@ -33,5 +34,6 @@ class Employee extends Model
         'birth' => 'datetime',
         'salary' => 'integer',
         'bonus' => 'decimal:2',
+        'order' => 'integer',
     ];
 }

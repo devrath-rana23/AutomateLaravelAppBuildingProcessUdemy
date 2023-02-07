@@ -29,6 +29,7 @@ class EmployeeFactory extends Factory
             'salary' => $this->faker->randomNumber(),
             'martial_status' => $this->faker->randomElement(["single","married","divorced"]),
             'bonus' => $this->faker->randomFloat(2, 0, 999999.99),
+            'order' => $this->faker->randomNumber(),
         ];
     }
 }

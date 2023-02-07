@@ -6,3 +6,4 @@ models:
     salary: unsignedinteger
     martial_status: enum:single,married,divorced
     bonus: decimal:8,2
+    order: unsignedinteger autoincrement
