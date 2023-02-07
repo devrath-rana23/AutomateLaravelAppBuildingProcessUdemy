@@ -115,3 +115,8 @@ However, a Many To Many relationship requires a third database table, called a p
 As a rule of thumb, if you use a belongsToMany relationship, it can only be paired with another belongsToMany relationship and means that you have a third pivot table. If you use a hasMany relationship, it can only be paired with a belongsTo relationship and no extra database tables are required.
 
 In your example, you just need to make the inverse relation into a belongsToMany and add your custom table again, along with the foreign and local keys (reversing the order from the other model).
+
+
+# Run 
+php artisan blueprint:erase
+# Run php artisan vendor:publish --tag=blueprint-config -> this will copy the files from blueprint vendor folder to laravel config folder
