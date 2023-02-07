@@ -4,11 +4,11 @@ created:
     - database/factories/ContactInfoFactory.php
     - database/factories/DepartmentFactory.php
     - database/factories/ProjectFactory.php
-    - database/migrations/2023_02_07_190500_create_employees_table.php
-    - database/migrations/2023_02_07_190501_create_contact_infos_table.php
-    - database/migrations/2023_02_07_190502_create_departments_table.php
-    - database/migrations/2023_02_07_190503_create_projects_table.php
-    - database/migrations/2023_02_07_190504_create_employee_project_table.php
+    - database/migrations/2023_02_07_190802_create_employees_table.php
+    - database/migrations/2023_02_07_190803_create_contact_infos_table.php
+    - database/migrations/2023_02_07_190804_create_departments_table.php
+    - database/migrations/2023_02_07_190805_create_projects_table.php
+    - database/migrations/2023_02_07_190806_create_employee_project_table.php
     - app/Models/Employee.php
     - app/Models/ContactInfo.php
     - app/Models/Department.php
@@ -18,7 +18,7 @@ created:
     - database/seeders/EmployeeSeeder.php
     - database/seeders/DepartmentSeeder.php
     - tests/Feature/Http/Controllers/EmployeeControllerTest.php
-    - resources/views/employee/show.blade.php
+    - app/Http/Requests/EmployeeTestRequest.php
 updated:
     - routes/web.php
 models:
