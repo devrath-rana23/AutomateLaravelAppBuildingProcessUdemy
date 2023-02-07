@@ -2,18 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\EmployeeTestRequest;
 use App\Models\Employee;
 use Illuminate\Http\Request;
 
 class EmployeeController extends Controller
 {
     /**
-     * @param \App\Http\Requests\EmployeeTestRequest $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
-    public function test(EmployeeTestRequest $request)
+    public function test(Request $request)
     {
         $employee = Employee::find($id);
+
+        $employee->save();
     }
 }
