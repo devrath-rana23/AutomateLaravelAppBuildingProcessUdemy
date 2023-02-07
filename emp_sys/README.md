@@ -158,5 +158,6 @@ Let's request our action.
 
 And here are all of the employees that resides inside our database.
 
+# Make a job ComputeSalary -> php artisan make:job ComputeSalary
 
-
+# Write a statement to dispatch this job

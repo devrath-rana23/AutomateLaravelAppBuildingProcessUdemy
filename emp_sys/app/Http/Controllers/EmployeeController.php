@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Jobs\ComputeSalary;
 use App\Models\Employee;
 use Illuminate\Http\Request;
 
@@ -13,8 +14,8 @@ class EmployeeController extends Controller
      */
     public function test(Request $request)
     {
-        $employee = Employee::find(1);
+        $employee = Employee::find($id);
 
-        $employee->delete();
+        ComputeSalary::dispatch($employee);
     }
 }
