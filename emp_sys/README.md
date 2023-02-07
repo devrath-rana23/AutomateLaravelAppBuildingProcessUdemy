@@ -103,3 +103,15 @@ sudo chmod +x blueprint.sh -> giving execute permission to shell file
 # change type run shell
 
 # change type and add index to type and add nullable to type and run shell
+
+# https://stackoverflow.com/questions/36208460/hasmany-vs-belongstomany-in-laravel-5-x
+
+hasMany is used in a One To Many relationship while belongsToMany refers to a Many To Many relationship. They are both distinct relationship types and each require a different database structure - thus they take different parameters.
+
+The key difference is that in a One To Many relationship, you only need the two database tables that correspond to the related models. This is because the reference to the relation is stored on the owned model's table itself. For instance, you might have a Country model and a City model. A Country has many cities. However, each City only exists in one country. Therefore, you would store that country on the City model itself (as country_id or something like that).
+
+However, a Many To Many relationship requires a third database table, called a pivot table. The pivot table stores references to both the models and you can declare it as a second parameter in the relationship declaration. For example, imagine you have your City model and you also have a Car model. You want a relationship to show the types of cars people drive in each city. Well, in one city people will drive many different types of car. However, if you look at one car type you will also know that it can be driven in many different cities. Therefore it would be impossible to store a city_id or a car_id on either model because each would have more than one. Therefore, you put those references in the pivot table.
+
+As a rule of thumb, if you use a belongsToMany relationship, it can only be paired with another belongsToMany relationship and means that you have a third pivot table. If you use a hasMany relationship, it can only be paired with a belongsTo relationship and no extra database tables are required.
+
+In your example, you just need to make the inverse relation into a belongsToMany and add your custom table again, along with the foreign and local keys (reversing the order from the other model).

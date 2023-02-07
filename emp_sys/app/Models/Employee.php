@@ -39,6 +39,11 @@ class Employee extends Model
         'department_id' => 'integer',
     ];
 
+    public function projects()
+    {
+        return $this->belongsToMany(Project::class);
+    }
+
     public function department()
     {
         return $this->belongsTo(Department::class);
