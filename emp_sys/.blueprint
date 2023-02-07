@@ -4,11 +4,11 @@ created:
     - database/factories/ContactInfoFactory.php
     - database/factories/DepartmentFactory.php
     - database/factories/ProjectFactory.php
-    - database/migrations/2023_02_07_175531_create_employees_table.php
-    - database/migrations/2023_02_07_175532_create_contact_infos_table.php
-    - database/migrations/2023_02_07_175533_create_departments_table.php
-    - database/migrations/2023_02_07_175534_create_projects_table.php
-    - database/migrations/2023_02_07_175535_create_employee_project_table.php
+    - database/migrations/2023_02_07_181046_create_employees_table.php
+    - database/migrations/2023_02_07_181047_create_contact_infos_table.php
+    - database/migrations/2023_02_07_181048_create_departments_table.php
+    - database/migrations/2023_02_07_181049_create_projects_table.php
+    - database/migrations/2023_02_07_181050_create_employee_project_table.php
     - app/Models/Employee.php
     - app/Models/ContactInfo.php
     - app/Models/Department.php
