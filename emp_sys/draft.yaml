@@ -8,6 +8,7 @@ models:
     bonus: decimal:8,2 nullable
     order: unsignedinteger default:1 index
     department_id: id foreign:department.id
+    softDeletesTz
     relationships:
       belongsToMany: Project
       hasOne: ContactInfo

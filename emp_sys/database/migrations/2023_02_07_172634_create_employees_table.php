@@ -25,6 +25,7 @@ class CreateEmployeesTable extends Migration
             $table->decimal('bonus', 8, 2)->nullable();
             $table->unsignedInteger('order')->default(1)->index();
             $table->foreignId('department_id')->constrained();
+            $table->softDeletesTz();
             $table->timestamps();
         });
 
