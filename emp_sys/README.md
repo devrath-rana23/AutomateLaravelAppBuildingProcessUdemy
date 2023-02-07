@@ -122,3 +122,41 @@ php artisan blueprint:erase
 # Run php artisan vendor:publish --tag=blueprint-config -> this will copy the files from blueprint vendor folder to laravel config folder
 
 # Make changes to blueprint config file
+
+# Make controller configurations in draft.yaml
+Let's blueprint our first controller along with one action, which is test first :controllers keyword,
+
+then a list of controllers with a wider indentation, then the actions under each controller with an
+
+extra indentation, then a fourth level for statements inside each action.
+
+There are several statements that we can use inside the action.
+
+The statement is a key followed by a colon and then several parameters.
+
+First and most important is query, which will generate simple and medium queries.
+
+Unfortunately, queries generated this way are not ready to be consumed instantly.
+
+They should have a human look and some mapping before they are ready to be consumed.
+
+Putting all will make us return all of the employees and it will return everything and put them in a
+
+collection based on our batch and see what it generated for us.
+
+Let's bring this employee collection.
+
+Blueprint will build a route for our action as well.
+
+In the Web php
+
+This is a fully qualified route.
+
+Let's serve our application on port 8000 using artisan serve.
+
+Let's request our action.
+
+And here are all of the employees that resides inside our database.
+
+
+
