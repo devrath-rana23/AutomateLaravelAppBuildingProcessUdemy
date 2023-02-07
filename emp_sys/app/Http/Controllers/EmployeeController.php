@@ -14,5 +14,6 @@ class EmployeeController extends Controller
     public function test(Request $request)
     {
         $employees = Employee::all();
+        dd($employees);
     }
 }
