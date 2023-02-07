@@ -169,3 +169,43 @@ And here are all of the employees that resides inside our database.
 # write notify in draft and run shell
 
 # run php artisan make:notification checkDetails
+
+# Respond
+Respond, let's put the name of the variable we want to send to the client and then build and remove
+
+the new route that is added in the route file, because blueprint doesn't erase those.
+
+It's only track the files, not the lines of code.
+
+So it will create a file and remove a file that is tracked in the DOT blueprint file.
+
+It can add a line of code to an existing file, but will never remove a line from an existing file.
+
+The result of our work in the controller is like this , let's server our app on port 8000 and see the result on
+
+the browser.
+
+It will return the JSON of the employee with the id that's given as a parameter.
+
+Let's try some view with the render statement.
+
+We will pass the name of the view with the object we want to show inside it.
+
+Let's build.
+
+Remove the extra route and see the result.
+
+We need the ID from the request, as usual, we can see that the View statement is created passing the employee
+
+to the view.
+
+The blueprints have created us The View as well.
+
+Let's bring something to get sure that we were good.
+
+We will print only the name of the employee in here.
+
+And here we go.
+
+The name is shown and Render is working.
+
