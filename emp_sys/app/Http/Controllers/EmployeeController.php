@@ -2,11 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Events\FancyEvent;
-use App\Models\Project;
-use Illuminate\Http\Request;
-use App\Notification\checkDetails;
 use App\Models\Employee;
+use Illuminate\Http\Request;
 
 class EmployeeController extends Controller
 {
@@ -16,13 +13,18 @@ class EmployeeController extends Controller
      */
     public function test(Request $request)
     {
-        $project = Project::find($request->id);
-        $employee = Employee::find(1);
+        $employee = Employee::find($request->id);
 
-        $employee->notify(new checkDetails($project));
+        return redirect()->route('employee.show', ['id'=>$employee->id]);
+    }
 
-        $request->session()->flash('employee.name', $employee->name);
-
-        event(new FancyEvent($employee));
+    /**
+     * @param \Illuminate\Http\Request $request
+     * @return \Illuminate\Http\Response
+     */
+    public function showEmployee(Request $request)
+    {
+        $employee = Employee::find($request->id);
+        dd($employee);
     }
 }
