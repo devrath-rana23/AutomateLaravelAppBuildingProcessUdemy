@@ -21,7 +21,7 @@ class CreateEmployeesTable extends Migration
             $table->unsignedInteger('salary');
             $table->enum('martial_status', ["single","married","divorced"]);
             $table->decimal('bonus', 8, 2);
-            $table->unsignedInteger('order')->autoIncrement();
+            $table->unsignedInteger('order')->default(1);
             $table->timestamps();
         });
     }

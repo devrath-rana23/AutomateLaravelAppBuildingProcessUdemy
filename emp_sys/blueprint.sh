@@ -1,4 +1,4 @@
 php artisan blueprint:erase
 php artisan blueprint:build
 php artisan migrate:fresh
-php artian db:seed
+php artisan db:seed
