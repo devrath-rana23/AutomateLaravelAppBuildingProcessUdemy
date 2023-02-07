@@ -81,3 +81,7 @@ Gives error
 # create new blueprint and migrate fresh
 
 # php artisan db:seed
+
+# Make shell(blueprint.sh) file
+sudo chmod +x blueprint.sh -> giving execute permission to shell file
+./blueprint.sh -> run this command
