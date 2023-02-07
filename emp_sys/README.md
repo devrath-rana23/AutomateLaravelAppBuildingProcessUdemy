@@ -77,3 +77,5 @@ draft and then run blueprint:build artisan command
 Gives error
 
 # remove already created blueprints using blueprint:erase
+
+# create new blueprint and migrate fresh
