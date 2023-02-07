@@ -44,6 +44,11 @@ class Employee extends Model
         return $this->belongsToMany(Project::class);
     }
 
+    public function contactInfo()
+    {
+        return $this->hasOne(ContactInfo::class);
+    }
+
     public function department()
     {
         return $this->belongsTo(Department::class);
