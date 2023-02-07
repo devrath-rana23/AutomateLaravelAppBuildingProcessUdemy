@@ -13,6 +13,8 @@ class CreateEmployeesTable extends Migration
      */
     public function up()
     {
+        Schema::disableForeignKeyConstraints();
+
         Schema::create('employees', function (Blueprint $table) {
             $table->id();
             $table->string('name', 100);
@@ -22,8 +24,11 @@ class CreateEmployeesTable extends Migration
             $table->enum('martial_status', ["single","married","divorced"]);
             $table->decimal('bonus', 8, 2)->nullable();
             $table->unsignedInteger('order')->default(1)->index();
+            $table->foreignId('department_id')->constrained();
             $table->timestamps();
         });
+
+        Schema::enableForeignKeyConstraints();
     }
 
     /**

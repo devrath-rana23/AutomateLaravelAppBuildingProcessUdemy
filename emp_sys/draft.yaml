@@ -7,3 +7,6 @@ models:
     martial_status: enum:single,married,divorced
     bonus: decimal:8,2 nullable
     order: unsignedinteger default:1 index
+    department_id: id foreign:department.id
+  Department:
+    name: string:100
