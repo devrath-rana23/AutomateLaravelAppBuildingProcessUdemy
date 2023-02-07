@@ -32,5 +32,6 @@ seeders: Project,ContactInfo,Employee,Department
 controllers:
   Employee:
     test:
-      query: all
+      query: where:salary order:bonus
+      # query: all
 
