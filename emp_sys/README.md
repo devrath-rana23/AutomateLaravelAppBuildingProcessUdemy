@@ -71,3 +71,9 @@ We will create first yml file using php artisan blueprint:new
 
 # Make yaml 
 draft and then run blueprint:build artisan command
+
+# Run migration:fresh artisan command
+
+Gives error
+
+# remove already created blueprints using blueprint:erase
