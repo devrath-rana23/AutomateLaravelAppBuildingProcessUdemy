@@ -30,7 +30,7 @@ models:
 seeders: Project,ContactInfo
 
 controllers:
-  employee:
+  Employee:
     test:
       query: all
 

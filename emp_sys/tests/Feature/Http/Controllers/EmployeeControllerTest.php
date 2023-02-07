@@ -7,9 +7,9 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
 /**
- * @see \App\Http\Controllers\employeeController
+ * @see \App\Http\Controllers\EmployeeController
  */
-class employeeControllerTest extends TestCase
+class EmployeeControllerTest extends TestCase
 {
     use RefreshDatabase;
 
@@ -18,7 +18,7 @@ class employeeControllerTest extends TestCase
      */
     public function test_behaves_as_expected()
     {
-        $employees = employee::factory()->count(3)->create();
+        $employees = Employee::factory()->count(3)->create();
 
         $response = $this->get(route('employee.test'));
     }

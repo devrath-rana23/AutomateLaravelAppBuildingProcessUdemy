@@ -1,21 +1,21 @@
 created:
-    - app/Http/Controllers/employeeController.php
+    - app/Http/Controllers/EmployeeController.php
     - database/factories/EmployeeFactory.php
     - database/factories/ContactInfoFactory.php
     - database/factories/DepartmentFactory.php
     - database/factories/ProjectFactory.php
-    - database/migrations/2023_02_07_174800_create_employees_table.php
-    - database/migrations/2023_02_07_174801_create_contact_infos_table.php
-    - database/migrations/2023_02_07_174802_create_departments_table.php
-    - database/migrations/2023_02_07_174803_create_projects_table.php
-    - database/migrations/2023_02_07_174804_create_employee_project_table.php
+    - database/migrations/2023_02_07_174937_create_employees_table.php
+    - database/migrations/2023_02_07_174938_create_contact_infos_table.php
+    - database/migrations/2023_02_07_174939_create_departments_table.php
+    - database/migrations/2023_02_07_174940_create_projects_table.php
+    - database/migrations/2023_02_07_174941_create_employee_project_table.php
     - app/Models/Employee.php
     - app/Models/ContactInfo.php
     - app/Models/Department.php
     - app/Models/Project.php
     - database/seeders/ProjectSeeder.php
     - database/seeders/ContactInfoSeeder.php
-    - tests/Feature/Http/Controllers/employeeControllerTest.php
+    - tests/Feature/Http/Controllers/EmployeeControllerTest.php
 updated:
     - routes/web.php
 models:
