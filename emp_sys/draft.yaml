@@ -27,4 +27,5 @@ models:
     timestamps: false
     relationships:
       belongsToMany: Employee
+seeders: Project,ContactInfo
 
