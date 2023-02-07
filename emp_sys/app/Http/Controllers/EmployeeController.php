@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Events\FancyEvent;
-use App\Models\Employee;
+use App\Models\Project;
 use Illuminate\Http\Request;
+use App\Notification\checkDetails;
+use App\Models\Employee;
 
 class EmployeeController extends Controller
 {
@@ -14,7 +16,10 @@ class EmployeeController extends Controller
      */
     public function test(Request $request)
     {
-        $employee = Employee::find($id);
+        $project = Project::find($request->id);
+        $employee = Employee::find(1);
+
+        $employee->notify(new checkDetails($project));
 
         $request->session()->flash('employee.name', $employee->name);
 

@@ -165,3 +165,7 @@ And here are all of the employees that resides inside our database.
 # fire event script in yaml and run shell
 
 # php artisan make:listener to generate listeners and code further
+
+# write notify in draft and run shell
+
+# run php artisan make:notification checkDetails

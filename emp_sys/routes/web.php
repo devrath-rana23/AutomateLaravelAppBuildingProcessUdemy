@@ -21,3 +21,6 @@ Route::get('/', function () {
 
 
 Route::get('employee/test', [App\Http\Controllers\EmployeeController::class, 'test']);
+
+
+Route::get('employee/test', [App\Http\Controllers\EmployeeController::class, 'test']);

@@ -32,7 +32,8 @@ seeders: Project,ContactInfo,Employee,Department
 controllers:
   Employee:
     test:
-      find: id
+      find: project.id
+      notify: employee checkDetails with:project
       flash: employee.name # for session flash data
       fire: FancyEvent with:employee # won't create any event listener or wont register in event service provider
       # dispatch: ComputeSalary with:employee #ComputeSalary-> jobname; employee-> parameter name
