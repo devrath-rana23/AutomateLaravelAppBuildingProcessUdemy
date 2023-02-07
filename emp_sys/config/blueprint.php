@@ -27,7 +27,7 @@ return [
     |
     */
     'models_namespace' => 'Models',
-    'controllers_namespace' => 'Http\\Controllers',
+    'controllers_namespace' => 'Http\Controllers',
 
     /*
     |--------------------------------------------------------------------------

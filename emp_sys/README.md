@@ -120,3 +120,5 @@ In your example, you just need to make the inverse relation into a belongsToMany
 # Run 
 php artisan blueprint:erase
 # Run php artisan vendor:publish --tag=blueprint-config -> this will copy the files from blueprint vendor folder to laravel config folder
+
+# Make changes to blueprint config file
